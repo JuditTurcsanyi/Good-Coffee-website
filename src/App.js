@@ -4,7 +4,6 @@ import Contact from "./pages/Contact";
 import OurProducts from "./pages/OurProducts";
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from './components/Nav';
-import MovieDetail from './pages/MovieDetail';
 import {Switch, Route, useLocation} from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion';
 
@@ -22,9 +21,6 @@ function App() {
           </Route>
           <Route path="/products" exact>
             <OurProducts />
-          </Route>
-          <Route path="/products/:id">
-            <MovieDetail />
           </Route>
           <Route path="/contact">
             <Contact />

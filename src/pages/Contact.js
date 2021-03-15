@@ -89,6 +89,10 @@ const Wrapper = styled(motion.div)`
     display: flex;
     justify-content: space-around;
     width: 100vw;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 const MapWrapper = styled(motion.div)`
     width: 50vw;
@@ -96,6 +100,9 @@ const MapWrapper = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 700px) {
+        padding-top: 2rem;
+    }
 `
 
 const Info = styled(motion.div)`
@@ -114,6 +121,9 @@ const Day = styled(motion.div)`
     p {
         padding: 0;
         color: #1a1a1a;
+    }
+    @media (max-width: 700px) {
+        max-width: 50%;
     }
 `
 

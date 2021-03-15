@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutSection from "../components/AboutSection";
-import ServicesSection from "../components/ServicesSection";
+import IngredientsSection from "../components/IngredientsSection";
 import FaqSection from "../components/FaqSection";
 import {motion} from 'framer-motion';
 import {pageAnimation} from './animation';
@@ -10,7 +10,7 @@ const AboutUs = () => {
     return (
     <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show">
         <AboutSection />
-        <ServicesSection />
+        <IngredientsSection />
         <FaqSection />
     <ScrollTop />
     </motion.div>

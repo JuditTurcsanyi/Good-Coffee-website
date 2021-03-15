@@ -11,42 +11,34 @@ const FaqSection = () => {
   return (
     <Faq variants={scrollReveal} ref={element} animate={controls} initial="hidden">
       <h2>
-        Any Questions? <span>FAQ</span>
+        <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-      <Toggle title="How do I start?">
+      <Toggle title="What kind of milk options do you have?">
         <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            nesciunt!
+            We have almond milk, coconut milk, soy milk and beef milk.
           </p>
         </div>
       </Toggle>
-      <Toggle title="Daily schedule">
+      <Toggle title="When is the Pumpkin Spice Latte available?">
         <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            nesciunt!
+            We make Pumpkin Spice Latte all year!
           </p>
         </div>
       </Toggle>
-      <Toggle title="Different Payment Methods">
+      <Toggle title="Do you have decaf option?">
         <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            nesciunt!
+            Yes!
           </p>
         </div>
       </Toggle>
-      <Toggle title="What products do you offer?">
+      <Toggle title="Do you have some coffee merch?">
         <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            nesciunt!
+            We are working on it.
           </p>
         </div>
       </Toggle>

@@ -1,10 +1,11 @@
 import React from 'react';
-import home1 from '../img/home1.png';
+import coffeeshop from '../img/coffeeshop.jpeg';
 import {motion} from 'framer-motion';
 import {About, Description, Image, Hide} from '../styles';
 import {titleAnim, fade, photoAnim, scrollReveal} from "../pages/animation";
 import Wave from './Wave';
 import {useScroll} from './useScroll';
+import {Link} from 'react-router-dom';
 
 
 const AboutSection = () => {
@@ -14,20 +15,22 @@ const AboutSection = () => {
             <Description>
                 <motion.div className="title">
                     <Hide>
-                        <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+                        <motion.h2 variants={titleAnim}>We have</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim} >your <span>dreams</span> come</motion.h2>
+                        <motion.h2 variants={titleAnim} >the best <span>coffee</span> in the</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>true.</motion.h2>
+                        <motion.h2 variants={titleAnim}>world.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills.</motion.p>
-                <motion.button variants={fade}>Contact us</motion.button>
+                <motion.p variants={fade}>Good ideas start with great coffee.</motion.p>
+                <Link to="/contact">
+                    <motion.button variants={fade}>Visit us</motion.button>
+                </Link>
             </Description>
            <Image>
-                <motion.img variants={photoAnim} src={home1} alt="guy with a camera"/>
+                <motion.img variants={photoAnim} src={coffeeshop} alt="coffee shop"/>
             </Image> 
             <Wave />
         </About>
